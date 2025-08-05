@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #72edf2, #5151e5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    outline: none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.search-box button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    background-color: #5151e5;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #3a3ac7;
+}
+
+.weather-card {
+    color: white;
+}
+
+.location h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.location p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.temperature {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.temperature span {
+    font-size: 40px;
+    vertical-align: super;
+}
+
+.weather-icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.weather-icon p {
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 15px;
+    width: 48%;
+}
+
+.detail-item i {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.detail-item p:first-child {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.detail-item p:last-child {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .weather-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .temperature {
+        margin-bottom: 20px;
+    }
+    
+    .details {
+        flex-direction: column;
+    }
+    
+    .detail-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

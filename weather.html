@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="weather-card">
+            <div class="location">
+                <h1 id="city-name">--</h1>
+                <p id="date">--</p>
+            </div>
+            
+            <div class="weather-info">
+                <div class="temperature">
+                    <span id="temp">--</span><span>°C</span>
+                </div>
+                <div class="weather-icon">
+                    <img src="weather-icon.png" id="weather-icon" src="" alt="Weather Icon">
+                    <p id="weather-desc">--</p>
+                </div>
+            </div>
+            
+            <div class="details">
+                <div class="detail-item">
+                    <i class="fas fa-tint"></i>
+                    <div>
+                        <p>Humidity</p>
+                        <p id="humidity">--%</p>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-wind"></i>
+                    <div>
+                        <p>Wind Speed</p>
+                        <p id="wind-speed">-- km/h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+    
+</body>
+</html>
